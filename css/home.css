@@ -1,0 +1,38 @@
+body{
+    background-color: #e9c759;
+}
+
+.divpai{
+    position: absolute; 
+}
+
+.divjogos{
+    width: 150px;
+    height: 150px;
+    margin: 9.4px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.jogo:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+label{
+    position: absolute;
+    left: 20%;
+    bottom: 0px;
+    right: 20%;
+    font-size: 20px;
+    color: white;
+    font-family: "Titan One", cursive;
+    text-shadow: 
+    -1px -1px 0px #000, 
+    -1px 1px 0px #000, 
+    1px -1px 0px #000, 
+    1px 0px 0px #000;
+}

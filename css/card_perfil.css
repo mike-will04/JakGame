@@ -1,0 +1,23 @@
+.card {
+    background-color: white;
+    width: 150px;
+    float: right;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: "Titan One", cursive;
+}
+
+.card a:hover {
+    color: white;
+    background-color: rgb(192, 191, 191);
+    border-radius: 5px;
+}

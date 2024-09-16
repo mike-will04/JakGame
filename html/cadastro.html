@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/jaca.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/cabecalho.css" />
+        <link rel="stylesheet" href="../css/cadastro.css" />
+        <link rel="stylesheet" href="../css/upload.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <header>
+            <div class="col-12 div1">
+                <a href="../html/index.php">
+                    <img src="../img/logo.png" alt="logo" class="logo anima-logo"/>
+                </a>
+            </div>
+        </header>
+        <form action="../php/gravar.php" method="post" enctype="multipart/form-data">
+            <div class="section">
+                <div>
+                    <div class="col-12 text-center align-self-center py-3">
+                        <div>
+                            <div class="card-3d-wrap mx-auto">
+                                <div class="fundo">
+                                    <div class="form-centralizacao">
+                                        <h4 class="mb-4 pb-3">Criar Conta</h4>
+
+                                        <div class="upload" style="cursor: pointer">
+                                            <img src="../img/noprofil.jpg" width="100" height="100" id="profile"/>
+                                            <div class="round">
+                                                <input type="file" id="flImage" name="image"/>
+                                                <i class="fa fa-camera" style="color: #fff"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-style" placeholder="Usuário" name="user"/>
+                                            <i class="input-icon uil uil-user"></i>
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-style" placeholder="Email" name="email"/>
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <input type="password" class="form-style" placeholder="Senha" name="senha"/>
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <input type="submit" class="btn mt-4" value="Cadastrar"/>
+                                        <p class="mb-0 mt-4 text-center"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </body>
+</html>
+
+<script src="../js/upload.js"></script>
