@@ -43,7 +43,7 @@ if (isset($_SESSION['iduser'])) {
             </a>
         </div>
         <?php
-        if (isset($_SESSION['logado']) and $_SESSION['logado'] == true) {
+        if (isset($_SESSION['logado']) and $_SESSION['logado'] === true) {
             foreach ($check as $linha) {
                 if ($linha['foto_perfil'] == null) {
                     echo "
