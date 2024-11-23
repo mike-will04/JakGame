@@ -16,6 +16,7 @@
 
 
 -- Copiando estrutura do banco de dados para jakgame
+DROP DATABASE IF EXISTS `jakgame`;
 CREATE DATABASE IF NOT EXISTS `jakgame` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `jakgame`;
 
@@ -33,8 +34,6 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela jakgame.comentarios: ~0 rows (aproximadamente)
-INSERT INTO `comentarios` (`id_comentario`, `comentario`, `id_usuario`, `id_jogo`) VALUES
-	(21, 'Que jogo divertido!!!', 5, 3);
 
 -- Copiando estrutura para tabela jakgame.fotos
 CREATE TABLE IF NOT EXISTS `fotos` (
@@ -46,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `fotos` (
   CONSTRAINT `fotos_ibfk_1` FOREIGN KEY (`id_jogo`) REFERENCES `jogo` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela jakgame.fotos: ~64 rows (aproximadamente)
+-- Copiando dados para a tabela jakgame.fotos: ~12 rows (aproximadamente)
 INSERT INTO `fotos` (`id_fotos`, `foto`, `id_jogo`) VALUES
 	(3, 'Four Colors.png', 3),
 	(5, 'Pinnacle Racer.png', 5),
@@ -199,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `tags` (
   CONSTRAINT `tags_ibfk_1` FOREIGN KEY (`id_jogo`) REFERENCES `jogo` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=238 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela jakgame.tags: ~224 rows (aproximadamente)
+-- Copiando dados para a tabela jakgame.tags: ~0 rows (aproximadamente)
 INSERT INTO `tags` (`id_tags`, `tag`, `id_jogo`) VALUES
 	(7, '1 jogador', 3),
 	(8, '3 jogador', 3),
@@ -438,10 +437,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela jakgame.usuario: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela jakgame.usuario: ~1 rows (aproximadamente)
 INSERT INTO `usuario` (`id`, `usuario`, `senha`, `email`, `foto_perfil`, `foto_wallpaper`, `admin`) VALUES
-	(3, 'JakGame', '$2y$10$g4U8BWLrzxqPIGu985aOsuVXn24nOoMgUgBf.Hi7YHxxXrunDDkpq', 'eujakgame@gmail.com', 'jaca.png', NULL, 1),
-	(5, 'Mike', '$2y$10$rKyKmMcfON8GP9SwyM1JCupheJcF0cfhEZa72qea6cifmEgdPa8iG', 'mike@gmail.com', 'pizza.png', NULL, NULL);
+	(3, 'JakGame', '$2y$10$g4U8BWLrzxqPIGu985aOsuVXn24nOoMgUgBf.Hi7YHxxXrunDDkpq', 'eujakgame@gmail.com', 'jaca.png', NULL, 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
