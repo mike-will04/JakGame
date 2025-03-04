@@ -46,7 +46,7 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/mike-will04/JakGame.git
    ```
 2. Mova os arquivos para a pasta do servidor local.
 3. Configure o banco de dados importando o arquivo `banco.sql`.
